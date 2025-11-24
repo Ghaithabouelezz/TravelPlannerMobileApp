@@ -29,25 +29,25 @@ class Trip {
     return price.toStringAsFixed(0);
   }
 
-  // Real city-specific images from Unsplash
+  //assets did not work
   String getCityImageUrl() {
     final cityImages = {
-      // Lebanon cities
+      
       'Beirut': 'https://picsum.photos/800/600?random=1',
       'Tripoli': 'https://picsum.photos/800/600?random=2',
       'Byblos': 'https://picsum.photos/800/600?random=3',
 
-      // France cities
+      
       'Paris': 'https://picsum.photos/800/600?random=4',
       'Lyon': 'https://picsum.photos/800/600?random=5',
       'Marseille': 'https://picsum.photos/800/600?random=6',
 
-      // Italy cities
+      
       'Rome': 'https://picsum.photos/800/600?random=7',
       'Milan': 'https://picsum.photos/800/600?random=8',
       'Venice': 'https://picsum.photos/800/600?random=9',
 
-      // Spain cities
+      
       'Madrid': 'https://picsum.photos/800/600?random=10',
       'Barcelona': 'https://picsum.photos/800/600?random=11',
       'Seville': 'https://picsum.photos/800/600?random=12',
