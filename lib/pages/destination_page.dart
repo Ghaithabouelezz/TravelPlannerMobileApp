@@ -33,7 +33,7 @@ class _DestinationPageState extends State<DestinationPage> {
     _trip = widget.trip;
     _dateController.text = _trip.travelDate;
     _travelersController.text = _trip.travelers.toString();
-    // Initialize with current trip data
+    
     selectedCountry = _trip.country;
     selectedCity = _trip.city;
   }
@@ -42,15 +42,15 @@ class _DestinationPageState extends State<DestinationPage> {
     setState(() {
       selectedCountry = country;
       selectedCity = cities[country]!.first;
-      _trip.country = country; // Update trip country
-      _trip.city = selectedCity; // Update trip city
+      _trip.country = country; 
+      _trip.city = selectedCity; 
     });
   }
 
   void updateCity(String city) {
     setState(() {
       selectedCity = city;
-      _trip.city = city; // Update trip city
+      _trip.city = city; 
     });
   }
 
@@ -75,14 +75,14 @@ class _DestinationPageState extends State<DestinationPage> {
       ),
       body: Stack(
         children: [
-          // City background image - this will now update when city changes
+    
           Image.network(
             _trip.getCityImageUrl(),
             fit: BoxFit.cover,
             width: double.infinity,
             height: double.infinity,
           ),
-          // Semi-transparent overlay for readability
+          
           Container(
             color: Colors.black.withOpacity(0.4),
             width: double.infinity,
@@ -93,12 +93,12 @@ class _DestinationPageState extends State<DestinationPage> {
             child: Column(
               children: [
                 Text(
-                  'Select Your Destination - ${_trip.city}', // Show current city
+                  'Select Your Destination - ${_trip.city}', 
                   style: const TextStyle(fontSize: 24.0, color: Colors.white, fontWeight: FontWeight.bold),
                 ),
                 const SizedBox(height: 20.0),
 
-                // Country Dropdown
+                
                 Container(
                   padding: const EdgeInsets.all(8.0),
                   decoration: BoxDecoration(
@@ -131,7 +131,7 @@ class _DestinationPageState extends State<DestinationPage> {
 
                 const SizedBox(height: 20.0),
 
-                // City Dropdown
+                
                 Container(
                   padding: const EdgeInsets.all(8.0),
                   decoration: BoxDecoration(
@@ -164,7 +164,7 @@ class _DestinationPageState extends State<DestinationPage> {
 
                 const SizedBox(height: 20.0),
 
-                // Travelers input
+                
                 Container(
                   padding: const EdgeInsets.all(8.0),
                   decoration: BoxDecoration(
@@ -191,7 +191,7 @@ class _DestinationPageState extends State<DestinationPage> {
 
                 const SizedBox(height: 20.0),
 
-                // Date input
+                
                 Container(
                   padding: const EdgeInsets.all(8.0),
                   decoration: BoxDecoration(
@@ -218,7 +218,7 @@ class _DestinationPageState extends State<DestinationPage> {
 
                 const SizedBox(height: 40.0),
 
-                // Next Button
+                
                 ElevatedButton(
                   onPressed: () {
                     _trip.country = selectedCountry;
