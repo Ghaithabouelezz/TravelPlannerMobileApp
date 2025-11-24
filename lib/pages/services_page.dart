@@ -58,7 +58,7 @@ class _ServicesPageState extends State<ServicesPage> {
 
               const SizedBox(height: 30.0),
 
-              // Services in white container
+              
               Container(
                 padding: const EdgeInsets.all(16.0),
                 decoration: BoxDecoration(
@@ -67,7 +67,7 @@ class _ServicesPageState extends State<ServicesPage> {
                 ),
                 child: Column(
                   children: [
-                    // Hotel Checkbox
+                    
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -83,7 +83,7 @@ class _ServicesPageState extends State<ServicesPage> {
 
                     const SizedBox(height: 20.0),
 
-                    // Transport Checkbox
+                    
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -102,7 +102,7 @@ class _ServicesPageState extends State<ServicesPage> {
 
               const SizedBox(height: 40.0),
 
-              // Price display
+              
               Container(
                 padding: const EdgeInsets.all(16.0),
                 decoration: BoxDecoration(
@@ -117,7 +117,7 @@ class _ServicesPageState extends State<ServicesPage> {
 
               const SizedBox(height: 40.0),
 
-              // Next Button
+              
               ElevatedButton(
                 onPressed: () {
                   Navigator.of(context).push(
