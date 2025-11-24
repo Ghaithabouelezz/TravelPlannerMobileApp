@@ -32,7 +32,7 @@ class SummaryPage extends StatelessWidget {
 
               const SizedBox(height: 30.0),
 
-              // Summary details in white container
+              
               Container(
                 padding: const EdgeInsets.all(20.0),
                 decoration: BoxDecoration(
@@ -56,7 +56,7 @@ class SummaryPage extends StatelessWidget {
 
               const SizedBox(height: 30.0),
 
-              // Total price in colorful container
+              
               Container(
                 padding: const EdgeInsets.all(20.0),
                 decoration: BoxDecoration(
@@ -71,7 +71,7 @@ class SummaryPage extends StatelessWidget {
 
               const SizedBox(height: 40.0),
 
-              // Button
+              
               ElevatedButton(
                 onPressed: () {
                   Navigator.of(context).popUntil((route) => route.isFirst);
