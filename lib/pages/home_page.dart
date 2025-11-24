@@ -14,7 +14,7 @@ class HomePage extends StatelessWidget {
         backgroundColor: Colors.blue[700],
       ),
       body: Container(
-        // Simple colorful gradient background
+        
         decoration: const BoxDecoration(
           gradient: LinearGradient(
             colors: [Colors.blue, Colors.purple],
